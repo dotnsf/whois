@@ -1,0 +1,32 @@
+swagger: '2.0'
+info:
+  description: Whois API ドキュメント
+  version: 0.0.1
+  title: Whois REST APIs
+#host: localhost:8080
+basePath: /api
+tags:
+  - name: whois
+    description: Whois API
+schemes:
+  - http
+  - https
+paths:
+  /whois:
+    get:
+      tags:
+        - whois
+      summary: Whois
+      description: Whois lookup
+      produces:
+        - text/plain
+      parameters:
+        - name: domain
+          in: query
+          type: string
+          description: ドメイン名
+      responses:
+        '200':
+          description: 成功
+        '400':
+          description: エラー

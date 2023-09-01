@@ -1,0 +1,21 @@
+{
+    "name": "whois",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "node app.js",
+        "test": "mocha --exit api.spec.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "whois": "^2.14.0"
+    },
+    "repository": {},
+    "engines": {
+        "node": "16.x"
+    },
+    "devDependencies": {
+        "chai": "^4.3.6",
+        "mocha": "^9.2.1",
+        "supertest": "^6.2.2"
+    }
+}
